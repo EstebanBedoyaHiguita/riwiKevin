@@ -1,0 +1,34 @@
+{
+  "users": [
+    {
+      "id": "7655",
+      "email": "bedoya102@hotmail.com",
+      "password": "Esteban102212*"
+    },
+    {
+      "id": "7ed0",
+      "email": "bedoya102@outlook.es",
+      "password": "Esteban102212*"
+    },
+    {
+      "id": "46ac",
+      "email": "bedoya102@outlook.es",
+      "password": "Esteban102212*"
+    },
+    {
+      "id": "f25b",
+      "email": "bedoya102@gmail.com",
+      "password": "Esteban102212*"
+    },
+    {
+      "id": "94c3",
+      "email": "esteban23@gmail.es",
+      "password": "Esteban1022*"
+    },
+    {
+      "id": "57ee",
+      "email": "esteban23@gmail.es",
+      "password": "Esteban102212*"
+    }
+  ]
+}

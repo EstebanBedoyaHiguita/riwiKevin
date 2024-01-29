@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./ccs/style.css">
+    <title>veterinaria</title>
+</head>
+<body>
+    <h1 class="title">Sistema de veterinaria</h1>
+
+    <main class="container ">
+        <div class="row bg-white rounded">
+        <div class="col-sm-12 col-md-6">
+            <div class="p-2">
+                <h3>Datos del paciente</h3>
+                <form class="needs-validation p-2"novalidate>
+                    <div class="mb-3">
+                        <label for="name_pet">Nombre de la mascota</label>
+                        <input class="form-control" 
+                        type="text" 
+                        id="name_pet" 
+                        placeholder="Escriba el nombre de su mascota"
+                        required>
+                        <div class="invalid-feedback">
+                            Este campo es requerido.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="name_person">Nombre del dueño</label>
+                        <input class="form-control" 
+                        type="text" 
+                        id="name_person" 
+                        placeholder="Escriba su nombre"
+                        required>
+                        <div class="invalid-feedback">
+                            Este campo es requerido.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="phone_number">Telefono Propietario</label>
+                        <input class="form-control" 
+                        type="tel" 
+                        id="phone_number" 
+                        maxlength="10"
+                        placeholder="Escriba su numero telefonico"
+                        required>
+                        <div class="invalid-feedback">
+                            Este campo es requerido.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="date_cite">Fecha de la cita</label>
+                        <input class="form-control" 
+                        type="date" 
+                        id="date_cite" 
+                        required>
+                        <div class="invalid-feedback">
+                            Este campo es requerido.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="time_cite">Hora de la cita</label>
+                        <input class="form-control" 
+                        type="time" id="time_cite" 
+                        maxlength="10"
+                        placeholder="Escriba su numero telefonico"
+                        required>
+                        <div class="invalid-feedback">
+                            Este campo es requerido.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="description">Sintomas</label>
+                        <textarea 
+                        class="form-control" 
+                        id="description" 
+                        cols="30" 
+                        rows="3"></textarea>
+                        <div class="invalid-feedback">
+                            Este campo es requerido.
+                        </div>
+                    </div>
+                    
+
+                
+                    <button type="submit" class="btn btn-success w-100">Guardar</button>
+                </form>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <h3>Comfirmación de citas</h3>
+            <div class="card" style="width: 18rem;" id="cards">
+                <!-- <div class="card-body">
+                  <h5 class="card-title" >Nombre Mascota: <span id="nombreMascota"></span></h5>
+                  <h5 > Nombre Propietario : <span id="nombreDueno"></span> </h5>
+                  <h5 >Fecha :<span id="fechaCita"></span></h5>
+                  <h5 > Hora : <span id="horaCita"></span> </h5>
+                  <br><br>
+                  <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+                  <h5 class="card-title">Sintomas</h5>
+                  <p class="card-text" > <span id="sintomasMascota"></span></p>
+                  
+                  <button type="submit" class="btn btn-success " id="eliminarCita">Eliminar</button>
+                  <button type="submit" class="btn btn-success " id="Editar">Editar</button>
+                </div> -->
+              </div>
+            
+        </div>
+
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./js/bustrapvalidation.js"></script>
+    <script src="./js/scrip.js"></script>
+</body>
+</html>
