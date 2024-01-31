@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="img/logoSinFondo.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <title>PetCare</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="containerNavbar">
+      <nav class="navbar">
+        <a class="navbar-brand" href="#">
+          <img class="navbar-brand imgLogo" src="img/logoSinFondo.png" alt="Logo" />
+        </a>
+        <div class="container-fluid">
+          <div id="flags" class="flags">
+            <div class="flagsItems" data-language="es">
+              <img src="https://img.icons8.com/color/48/spain2-circular.png" alt="spain2-circular" />
+            </div>
+            <div class="flagsItems" data-language="en">
+              <img src="https://img.icons8.com/color/48/usa-circular.png" alt="usa-circular" />
+            </div>
+          </div>
+          <button class="navbar-toggler" id="btnMenu" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Tienda</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Inicio de sesión
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a href="userLogin.html">
+                        <button class="dropdown-item">Cliente</button>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="vetUserLogin.html">
+                        <button class="dropdown-item">Veterinario</button>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+  </header>
+
+  <!-- Main container -->
+  <div class="container-fluid mainContainer">
+    <!-- Promotions carousel -->
+    <div class="containerCarrusel">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+            aria-label="Slide 5"></button>
+        </div>
+
+        <div class="carousel-inner p-0">
+          <div class="carousel-item active">
+            <img src="./img/publicidad1.jpeg" class="d-block carouselImage" alt="publicidad1" />
+          </div>
+
+          <div class="carousel-item">
+            <img src="./img/publicidad2.jpeg" class="d-block carouselImage" alt="publicidad2" />
+          </div>
+
+          <div class="carousel-item">
+            <img src="./img/publicidad3.jpeg" class="d-block carouselImage" alt="publicidad3" />
+          </div>
+
+          <div class="carousel-item">
+            <img src="./img/publicidad4.jpeg" class="d-block carouselImage" alt="publicidad4" />
+          </div>
+
+          <div class="carousel-item">
+            <img src="./img/publicidad5.jpeg" class="d-block carouselImage" alt="publicidad5" />
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <br />
+
+    <!-- Our services -->
+    <div class="containerImg">
+      <div id="backgroundImage">
+        <h2 class="title">Nuestros servicios</h2>
+
+        <div class="iconContainer">
+          <a href="#consultaVeterinaria">
+            <img src="https://guau.com.co/cdn/shop/files/veterinarioadomicilio_800x.jpg?v=1699595668" class="icons"
+              data-bs-toggle="modal" data-bs-target="#modalIcons" alt="Consulta veterinaria" />
+          </a>
+
+          <a href="#icon2">
+            <img src="https://domestikaveterinaria.com/wp-content/uploads/DomestikaVeterinaria_Vacunas.jpg"
+              class="icons" class="icons" data-bs-toggle="modal" data-bs-target="#modalIcons2"
+              alt="Vacunacion y desparacitacion" />
+          </a>
+
+          <a href="#icon3">
+            <img src="https://i.pinimg.com/564x/e5/ac/0b/e5ac0bd6a020579d8e8e475b9f9d1b9f.jpg" class="icons"
+              class="icons" data-bs-toggle="modal" data-bs-target="#modalIcons3" alt="Toma de muestras" />
+          </a>
+
+          <a href="#icon4">
+            <img src="https://i.pinimg.com/564x/b9/41/ae/b941aeaf9e5163ef94929ec323f4d732.jpg" class="icons"
+              class="icons" data-bs-toggle="modal" data-bs-target="#modalIcons4" alt="Radiografia" />
+          </a>
+
+          <a href="#icon5">
+            <img src="https://lescuentoque.com.co/wp-content/uploads/2022/05/viajar-con-mascotas002-copia.jpg"
+              class="icons" data-bs-toggle="modal" data-bs-target="#modalIcons5" alt="Certificados de viaje" />
+          </a>
+
+          <a href="#icon6">
+            <img src="https://i.pinimg.com/564x/38/82/be/3882bed400845e6518eaeff1a0d32342.jpg" class="icons"
+              data-bs-toggle="modal" data-bs-target="#modalIcons6" alt="Servicio de eutanasia" />
+          </a>
+
+          <!-- icon1 -->
+
+          <div class="containerModalIcons">
+            <div class="modal fade" id="modalIcons" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title fs-5">Consulta Veterinaria</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body modal-bodyIcons modalIcon1">
+                    <p>
+                      ¡Porque la salud de tu peludo merece la atención más cercana!
+                      Nuestros veterinarios a domicilio están listos para brindar
+                      consultas personalizadas y resolver todas las inquietudes
+                      sobre la salud de tu mascota.
+                    </p>
+                    <p>
+                      ¡Tu amigo peludo se merece lo mejor, y nosotros estamos aquí
+                      para proporcionarlo!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- icon2 -->
+
+          <div class="containerModalIcons">
+            <div class="modal fade" id="modalIcons2" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title fs-5">
+                      Vacunación y desparasitación de tu mascota
+                    </h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body modal-bodyIcons modalIcon2">
+                    <p>
+                      Protege a tu compañero de cuatro patas con nuestro servicio de
+                      vacunación y desparasitación a domicilio. Mantener a tu
+                      mascota sana es nuestra prioridad, y lo hacemos de la manera
+                      más conveniente para ti.
+                    </p>
+                    <p>
+                      ¡Tu amor por ellos, combinado con nuestra atención experta, es
+                      la receta perfecta para una vida feliz y saludable!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- icon3 -->
+
+          <div class="containerModalIcons">
+            <div class="modal fade" id="modalIcons3" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title fs-5">
+                      Vacunación y desparasitación de tu mascota
+                    </h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body modal-bodyIcons modalIcon3">
+                    <p>
+                      En PetCare entendemos que algunas pruebas son necesarias para
+                      garantizar la salud óptima de tu mascota. Nuestro servicio de
+                      toma de muestras se realiza en la comodidad de tu hogar,
+                      minimizando el estrés para tu peludo.
+                    </p>
+                    <p>
+                      ¡Cuidamos de cada detalle para que tú y tu mascota se sientan
+                      tranquilos y seguros!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- icon4 -->
+
+          <div class="containerModalIcons">
+            <div class="modal fade" id="modalIcons4" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title fs-5">
+                      Radiografía y Ecografía
+                    </h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body modal-bodyIcons modalIcon4">
+                    <p>
+                      La tecnología de vanguardia se encuentra ahora en la puerta de
+                      tu casa. Con nuestros servicios de radiografía y ecografía a
+                      domicilio, obtén diagnósticos precisos sin tener que salir. Tu
+                      tranquilidad y la salud de tu mascota son nuestra prioridad.
+                    </p>
+                    <p>
+                      ¡Confía en nosotros para proporcionar atención veterinaria
+                      avanzada con la comodidad que te mereces!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- icon5 -->
+
+          <div class="containerModalIcons">
+            <div class="modal fade" id="modalIcons5" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title fs-5">
+                      Certificados de viaje
+                    </h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body modal-bodyIcons modalIcon5">
+                    <p>
+                      ¿Planeando una aventura con tu amigo peludo? En PetCare,
+                      hacemos que el proceso sea suave y sin complicaciones.
+                      Nuestros certificados de viaje garantizan que tu mascota esté
+                      lista para embarcarse en cualquier travesía contigo.
+                    </p>
+                    <p>
+                      ¡Viaja con confianza, sabiendo que cuidamos de la salud y
+                      bienestar de tu compañero durante todo el trayecto!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- icon6 -->
+
+          <div class="containerModalIcons">
+            <div class="modal fade" id="modalIcons6" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title fs-5">
+                      Servicio de Eutanasia
+                    </h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body modal-bodyIcons modalIcon6">
+                    <p>
+                      En momentos difíciles, PetCare está aquí para brindar apoyo
+                      compasivo. Nuestro servicio de eutanasia a domicilio se
+                      realiza con la máxima empatía y respeto, permitiéndote
+                      despedirte de tu querido amigo en un entorno familiar.
+                    </p>
+                    <p>
+                      Tu mascota merece despedirse con dignidad y amor, y nosotros
+                      nos aseguramos de que así sea.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <!-- Photo gallery -->
+    <div class="gallery">
+      <img src="https://i.pinimg.com/564x/d7/7e/64/d77e6480f08e5bd4f4bc615ca8b4938b.jpg" alt="image1" />
+
+      <img src="https://i.pinimg.com/564x/47/15/85/471585ac4efdd66975de3bc1e96392a3.jpg" alt="image2" />
+
+      <img src="https://i.pinimg.com/564x/7c/78/4e/7c784e0fddce6faa2f7fd6b5aa898e82.jpg" alt="image3" />
+
+      <img src="https://i.pinimg.com/564x/69/2c/15/692c156f3da740718453fd9c2e83dc03.jpg" alt="image4" />
+
+      <img src="https://i.pinimg.com/564x/ba/c5/e1/bac5e153506f4957ab1f75d93f5a1b94.jpg" alt="image5" />
+
+      <img src="https://i.pinimg.com/564x/eb/97/bb/eb97bbb120dc8871dbe0e8558f6f0312.jpg" alt="image6" />
+    </div>
+
+    <!-- Veterinary cards -->
+    <div class="backgroundImageTwo">
+      <h2 class="title">Veterinarios</h2>
+      <div class="containerVet">
+        <!-- Veterinary 1 -->
+        <div class="cardVet">
+          <img src="https://i.pinimg.com/564x/1b/52/fd/1b52fd81c2282b432b85dc6a8a01f13d.jpg" alt="Doctora" />
+          <div class="vetContainerText">
+            <h4 class="cardTitle">Dra. María Fernández</h4>
+            <p class="cardText">
+              Mi objetivo es establecer un vínculo fuerte con cada familia y
+              garantizar que sus adorables compañeros estén en las mejores
+              manos.
+            </p>
+            <div class="btnModal">
+              <a class="btn btn-info" type="button" data-bs-toggle="modal" data-bs-target="#profileVet1">
+                Ver perfil
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="profileVet1" tabindex="-1" aria-labelledby="profileVet" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body modalProfileVetBody">
+                <div class="vetImagen">
+                  <img src="https://i.pinimg.com/564x/1b/52/fd/1b52fd81c2282b432b85dc6a8a01f13d.jpg" alt="Doctora" />
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Especialización: </li>
+                    <li class="list-group-item">Numero de tarjeta </li>
+                  </ul>
+                </div>
+                <div class="textModalVet">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Nombre Doctor</h1>
+                  <hr>
+                  <p>
+                    ¡Hola! estoy aquí para ser tu guía en el mundo del bienestar animal! Mi superpoder es la atención
+                    personalizada, donde cada consulta es como una paseo en un parque lleno de cuidados y cariño. ¡Vamos
+                    a hacer que la salud de tus mascotas brille con luz propia!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Veterinary 2 -->
+        <div class="cardVet">
+          <img
+            src="https://images.pexels.com/photos/6235664/pexels-photo-6235664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="Doctor" />
+          <div class="vetContainerText">
+            <h4 class="cardTitle">Dr. Javier Morales</h4>
+            <p class="cardText">
+              Me a mantener a tus mascotas protegidas contra enfermedades mediante un programa
+              completo de vacunación y desparasitación.
+            </p>
+            <div class="btnModal">
+              <a class="btn btn-info" type="button" data-bs-toggle="modal" data-bs-target="#profileVet2">
+                Ver perfil
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="profileVet2" tabindex="-1" aria-labelledby="profileVet" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body modalProfileVetBody">
+                <div class="vetImagen">
+                  <img
+                  src="https://images.pexels.com/photos/6235664/pexels-photo-6235664.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                  alt="Doctora" />
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Especialización: </li>
+                    <li class="list-group-item">Numero de tarjeta </li>
+                  </ul>
+                </div>
+                <div class="textModalVet">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Nombre Doctor</h1>
+                  <hr>
+                  <p>
+                    Saludos, soy tu defensor implacable de tus peludos! Con mi capa de vacunación y desparasitación,
+                    garantizo un escudo impenetrable contra las enfermedades. ¡Juntos, hagamos que la salud de tus
+                    mascotas sea tan fuerte como un superhéroe!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Veterinariy 3 -->
+        <div class="cardVet">
+          <img
+            src="https://www.shopveterinario.com.br/blog/wp-content/uploads/2021/10/como-abrir-uma-clinica-artigo.jpg"
+            alt="Doctora" />
+          <div class="vetContainerText">
+            <h4 class="cardTitle">Dra. Carolina Herrera</h4>
+            <p class="cardText">
+              En PetCare, mi objetivo es permitir que tus amigos peludos se
+              despidan con dignidad y amor.
+            </p>
+            <div class="btnModal">
+              <a class="btn btn-info" type="button" data-bs-toggle="modal" data-bs-target="#profileVet3">
+                Ver perfil
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="profileVet3" tabindex="-1" aria-labelledby="profileVet" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body modalProfileVetBody">
+                <div class="vetImagen">
+                  <img
+                    src="https://www.shopveterinario.com.br/blog/wp-content/uploads/2021/10/como-abrir-uma-clinica-artigo.jpg"
+                    alt="Doctora" />
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Especialización: </li>
+                    <li class="list-group-item">Numero de tarjeta </li>
+                  </ul>
+                </div>
+                <div class="textModalVet">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Nombre Doctor</h1>
+                  <hr>
+                  <p>
+                    Hola, soy tu amiga compasiva en momentos difíciles. Mi misión es brindar paz y amor a tus seres
+                    queridos en su último viaje. Con mi toque de compasión, transformaremos despedidas
+                    en recuerdos eternos llenos de amor.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Veterinary 4 -->
+        <div class="cardVet">
+          <img src="https://images.pexels.com/photos/7470635/pexels-photo-7470635.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="Doctor" />
+          <div class="vetContainerText">
+            <h4 class="cardTitle">Dr. Alejandro Martínez</h4>
+            <p class="cardText">
+              Confía en mí para que tus mascotas estén listas para explorar el
+              mundo contigo.
+            </p>
+            <div class="btnModal">
+              <a class="btn btn-info" type="button" data-bs-toggle="modal" data-bs-target="#profileVet4">
+                Ver perfil
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="profileVet4" tabindex="-1" aria-labelledby="profileVet" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body modalProfileVetBody">
+                <div class="vetImagen">
+                  <img
+                    src="https://images.pexels.com/photos/7470635/pexels-photo-7470635.jpeg?auto=compress&cs=tinysrgb&w=800"
+                    alt="Doctor" />
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Especialización: </li>
+                    <li class="list-group-item">Numero de tarjeta </li>
+                  </ul>
+                </div>
+                <div class="textModalVet">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Nombre Doctor</h1>
+                  <hr>
+                  <p>
+                    ¡Hola, aventurero! ¿Planeas aventuras con tu mascota? Permíteme encargarme de la certificación de
+                    viaje para que ambos disfruten sin preocupaciones. Con siete años de experiencia, estoy aquí para
+                    hacer que tus viajes con tus seres peludos sean inolvidables y seguros.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Veterinary 5 -->
+        <div class="cardVet">
+          <img src="https://i.pinimg.com/474x/46/01/ba/4601baef425415d5e422e1abedf540ae.jpg" alt="Doctora" />
+          <div class="vetContainerText">
+            <h4 class="cardTitle">Dra. Gabriela Vargas</h4>
+            <p class="cardText">
+              ¡Cuenta conmigo para cuidar de tus amigos peludos de una manera
+              única y adaptada a sus necesidades individuales!
+            </p>
+            <div class="btnModal">
+              <a class="btn btn-info" type="button" data-bs-toggle="modal" data-bs-target="#profileVet5">
+                Ver perfil
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="profileVet5" tabindex="-1" aria-labelledby="profileVet" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body modalProfileVetBody">
+                <div class="vetImagen">
+                  <img src="https://i.pinimg.com/474x/46/01/ba/4601baef425415d5e422e1abedf540ae.jpg" alt="Doctora" />
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Especialización: </li>
+                    <li class="list-group-item">Numero de tarjeta </li>
+                  </ul>
+                </div>
+                <div class="textModalVet">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Nombre Doctor</h1>
+                  <hr>
+                  <p>
+                    ¡Hola! mi pasión es desvelar los secretos detrás de la salud de tus
+                    mascotas.Estoy aquí para proporcionar diagnósticos precisos y tratamientos efectivos.
+                    ¡Descubre la diferencia de una atención avanzada y personalizada!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Veterinary 6 -->
+        <div class="cardVet">
+          <img src="https://images.pexels.com/photos/7470631/pexels-photo-7470631.jpeg?auto=compress&cs=tinysrgb&w=800"
+            alt="Doctor" />
+          <div class="vetContainerText">
+            <h4 class="cardTitle">Dr. Ricardo Navarro</h4>
+            <p class="cardText">
+              ¡Salta y baila, amigo peludo! Soy el coreógrafo ortopédico que hará que tus
+              mascotas se muevan con gracia y alegría.
+            </p>
+            <div class="btnModal">
+              <a class="btn btn-info" type="button" data-bs-toggle="modal" data-bs-target="#profileVet6">
+                Ver perfil
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+  </div>
+
+  <div class="modal fade" id="profileVet6" tabindex="-1" aria-labelledby="profileVet" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body modalProfileVetBody">
+          <div class="vetImagen">
+            <img src="https://images.pexels.com/photos/7470631/pexels-photo-7470631.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Doctora" />
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Especialización: </li>
+              <li class="list-group-item">Numero de tarjeta </li>
+            </ul>
+          </div>
+          <div class="textModalVet">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Nombre Doctor</h1>
+            <hr>
+            <p>
+              Me especializo en mejorar la calidad de vida de tus mascotas con problemas
+              musculoesqueléticos. Con once años de experiencia en ortopedia veterinaria, ofrezco tratamientos avanzados
+              y personalizados. ¡Hagamos que tus amigos peludos se muevan con alegría!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div>
+      <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Contactanos
+      </button>
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5">Contactanos</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form class="row g-3">
+                <div class="col-12">
+                  <label for="inputName" class="form-label">Nombre Completo</label>
+                  <input type="text" class="form-control" id="inputName">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6 ">
+                  <label for="inputPhone" class="form-label">Teléfono</label>
+                  <input type="tel" class="form-control" id="inputPhone">
+                </div>
+                <div class="col-12">
+                  <label for="inputTopic" class="form-label">Asunto</label>
+                  <input type="text" class="form-control" id="inputTopic">
+                </div>
+                <div class="col-12">
+                  <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-outline-success">Enviar</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <script src="js/app.js"></script>
+  <!-- <script src="js/translateApi.js"></script> -->
+</body>
+
+</html>

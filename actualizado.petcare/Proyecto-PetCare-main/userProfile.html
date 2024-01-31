@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/userProfile.css" />
+    <link rel="icon" href="img/logoSinFondo.png" />
+    <title>Perfil Cliente</title>
+  </head>
+
+  <body>
+    <div class="containerNavbar">
+      <nav class="navbar">
+        <a class="navbar-brand" href="index.html">
+          <img
+            class="navbar-brand imgLogo"
+            src="img/logoSinFondo.png"
+            alt="Logo"
+          />
+        </a>
+        <div class="container-fluid">
+          <h5>Bienvenido User</h5>
+          <button
+            class="navbar-toggler"
+            id="btnMenu"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
+                    >Inicio</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Tienda</a
+                  >
+                </li>
+                <li class="nav-item closeLogOut">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Cerrar sesión</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="mainContainer">
+      <div class="portfolio">
+        <div class="text-center pictureUser">
+          <img src="img/corgi.jpeg" class="rounded photoUser" alt="Cliente 1" />
+        </div>
+
+        <div class="dataUser">
+          <h2 class="nameUser">Cliente 1</h2>
+          <div class="line"></div>
+
+          <p><strong>Telefono: </strong></p>
+          <p><strong>Direccion: </strong></p>
+        </div>
+
+        <div class="buttonsProfileUser">
+          <div class="dropdown">
+            <button
+              class="btn btn-outline-info dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Mis mascotas
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <button type="button" class="dropdown-item" id="seeMyPets">
+                  Ver mis mascotas
+                </button>
+                <!-- <a class="dropdown-item" id="seeMyPets" href="">Ver mis mascotas</a> -->
+              </li>
+              <li>
+                <button type="button" class="dropdown-item" id="formAddPet">
+                  Agregar mascota
+                </button>
+                <!-- <a class="dropdown-item" id="formAddPet" href="#">Agregar mascota</a> -->
+              </li>
+            </ul>
+          </div>
+
+          <button
+            type="button"
+            id="addVeterinaryConsultation"
+            class="btn btn-outline-info"
+          >
+            Agendar cita
+          </button>
+          <button
+            type="button"
+            id="seeVetConsultation"
+            class="btn btn-outline-info"
+          >
+            Consultas Agendadas
+          </button>
+        </div>
+      </div>
+
+      <div class="containerPet">
+      
+
+      </div>
+    </div>
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/userProfile.js"></script>
+    
+  </body>
+</html>

@@ -30,5 +30,36 @@
       "email": "esteban23@gmail.es",
       "password": "Esteban102212*"
     }
+  ],
+  "authors": [
+    {
+      "id": "cbba",
+      "name": "andres",
+      "age": "22"
+    },
+    {
+      "id": "8046",
+      "name": "Gabriel garcia marquez",
+      "age": "70"
+    },
+    {
+      "id": "92f2",
+      "name": "jose montañez",
+      "age": "40"
+    }
+  ],
+  "books": [
+    {
+      "id": "d25e",
+      "name": "100 años de soledad",
+      "date": "2024-01-04",
+      "authorId": "8046"
+    },
+    {
+      "id": "c92d",
+      "name": "La vida son dos putos dias",
+      "date": "2024-01-03",
+      "authorId": "92f2"
+    }
   ]
 }

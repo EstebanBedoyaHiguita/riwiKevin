@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de Veterinario</title>
+    <link rel="icon" href="img/logoSinFondo.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/vetUserRegister.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <form class="needs-validation p-2" id="form" novalidate>
+        <h3>!Registrate Doc!</h3>
+
+        <img
+          src="https://static.maskokotas.com/blog/wp-content/uploads/2020/12/hare-4375952_1920-1.jpg"
+          class="imageLogin"
+          alt="conejo inicio"
+        />
+
+        <div class="data">
+          <label for="birthdate">Ingrese la fecha de nacimiento</label>
+          <input type="date" id="birthdate" required />
+          <div class="invalid-feedback">Este campo es requerido</div>
+        </div>
+
+        <div class="data">
+          <input
+            type="text"
+            id="name"
+            placeholder="Ingrese su nombre completo"
+            required
+          />
+          <div class="invalid-feedback">Este campo es requerido</div>
+        </div>
+
+        <div class="data">
+          <input
+            type="number"
+            id="idCard"
+            placeholder="Numero de cedula"
+            required
+          />
+          <div class="invalid-feedback">Este campo es requerido</div>
+        </div>
+
+        <div class="data">
+          <input
+            type="email"
+            id="email"
+            placeholder="Ingrese su correo electronico"
+            required
+          />
+          <div class="invalid-feedback">Este campo es requerido</div>
+        </div>
+
+        <div class="data">
+          <input
+            type="tel"
+            id="telphone"
+            placeholder="Ingrese su numero celular"
+            required
+          />
+          <div class="invalid-feedback">Este campo es requerido</div>
+        </div>
+
+        <div class="data">
+          <input
+            type="text"
+            id="areaOfSpecialization"
+            placeholder="Ingrese su especializacion"
+          />
+        </div>
+
+        <div class="data">
+          <input
+            type="number"
+            id="professionalCard"
+            placeholder="Ingrese el numero de su tarjeta profesional"
+            required
+          />
+          <div class="invalid-feedback">Este campo es requerido</div>
+        </div>
+
+        <div class="data">
+          <input
+            type="password"
+            id="password"
+            placeholder="Ingrese su contraseña"
+            required
+          />
+          <div class="invalid-feedback">Este campo es requerido</div>
+        </div>
+
+        <div class="buttons">
+          <button type="submit" id="submitCreateAccount">Crear cuenta</button>
+
+          <button id="submitLogin">
+            <a href="vetUserLogin.html">¿Ya tienes cuenta? Iniciar sesión</a>
+          </button>
+        </div>
+
+        <button id="home">
+          <a href="./index.html">Inicio</a>
+        </button>
+      </form>
+    </div>
+
+    <script src="js/vetUserRegister.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="js/bootstrapValidator.js" type="module"></script> -->
+  </body>
+</html>
